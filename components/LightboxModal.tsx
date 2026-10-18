@@ -191,14 +191,6 @@ export function LightboxModal({
                         </dd>
                       </div>
                     )}
-
-                    {artwork.isSamplePlaceholder && (
-                      <div className="bg-[#EFE8DC] p-3 border border-[#1D1A17]/10 text-[11px] text-[#6E655C]">
-                        Temporary curated sample plate (
-                        <code>{artwork.image}</code>). Replaceable anytime via{" "}
-                        <code>IMAGE-GUIDE.md</code>.
-                      </div>
-                    )}
                   </dl>
                 </div>
 

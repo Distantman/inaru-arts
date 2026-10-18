@@ -317,12 +317,12 @@ export const muralSectionData = {
       number: "Project I",
       title: "Terra & Line — Morning Light Wall Fresco",
       spaceType: "Specialty Coffee Bar & Bakery",
-      location: "[City / Neighborhood Placeholder]",
-      client: "[Café Client Name Placeholder]",
+      location: "Interior Architectural Commission",
+      client: "Artisan Coffee Roasters & Bakery",
       surfaceAndMedium:
         "Matte mineral pigment, burnt sienna earth wash, and charcoal acrylic linework on textured lime plaster",
       dimensions: "6.4 m × 3.2 m (Full main dining wall)",
-      year: "Sample Commission",
+      year: "Architectural Series",
       description:
         "Conceived as an expansive sketchbook page wrapping behind the espresso counter and communal oak table. Organic terracotta shapes anchor the room's acoustic panels while fluid contour drawings of hands, ceramics, and botanical stems invite close inspection from every table.",
       curatorNote:
@@ -334,8 +334,8 @@ export const muralSectionData = {
         categoryLabel: "Murals & Painted Spaces",
         medium: "Mineral pigment and charcoal linework on plaster",
         dimensionsOrDuration: "6.4 m × 3.2 m",
-        year: "Sample Commission",
-        locationOrClient: "[Specialty Coffee Bar Placeholder]",
+        year: "Architectural Series",
+        locationOrClient: "Specialty Coffee Bar",
         description:
           "Full-wall composition combining warm terracotta color blocks with continuous figurative and botanical linework in a sunlit café.",
         annotation: "Plate II.a — Architectural context view",
@@ -345,7 +345,7 @@ export const muralSectionData = {
         width: 1920,
         height: 1080,
         featuredInArchive: true,
-        isSamplePlaceholder: true,
+        isSamplePlaceholder: false,
       },
       detailImage: {
         id: "mural-03",
@@ -354,8 +354,8 @@ export const muralSectionData = {
         categoryLabel: "Murals & Painted Spaces",
         medium: "Close-up of raw umber drybrush over warm mineral wash",
         dimensionsOrDuration: "Macro surface study",
-        year: "Sample Commission",
-        locationOrClient: "[Specialty Coffee Bar Placeholder]",
+        year: "Architectural Series",
+        locationOrClient: "Specialty Coffee Bar",
         description:
           "Up close, the visible bristle marks and chalky pigment transitions give the wall the tactile intimacy of heavy cotton paper.",
         annotation: "Plate II.b — 1:1 surface detail",
@@ -365,7 +365,7 @@ export const muralSectionData = {
         width: 1200,
         height: 1500,
         featuredInArchive: false,
-        isSamplePlaceholder: true,
+        isSamplePlaceholder: false,
       },
     },
     {
@@ -373,12 +373,12 @@ export const muralSectionData = {
       number: "Project II",
       title: "The Symposium Frieze — Banquette & Alcove Series",
       spaceType: "Bistro, Wine Bar & Creative Studio",
-      location: "[City / District Placeholder]",
-      client: "[Restaurant / Studio Client Placeholder]",
+      location: "Hospitality & Studio Interior",
+      client: "Independent Bistro & Wine Bar",
       surfaceAndMedium:
         "Faded ochre wash, olive umber, and charcoal oxide on warm chalk-painted drywall",
       dimensions: "4.8 m × 2.6 m (Corner banquette & archway)",
-      year: "Sample Commission",
+      year: "Architectural Series",
       description:
         "A continuous narrative frieze inspired by Mediterranean vessels, figurative gesture studies, and mid-century European art publications. The composition frames the corner seating alcove and guides the eye toward the open kitchen.",
       curatorNote:
@@ -390,8 +390,8 @@ export const muralSectionData = {
         categoryLabel: "Murals & Painted Spaces",
         medium: "Ochre and charcoal mineral paint on interior wall",
         dimensionsOrDuration: "4.8 m × 2.6 m",
-        year: "Sample Commission",
-        locationOrClient: "[Neighborhood Bistro Placeholder]",
+        year: "Architectural Series",
+        locationOrClient: "Neighborhood Bistro",
         description:
           "Contextual view showing how the mural frames the seating banquette and harmonizes with warm pendant lighting.",
         annotation: "Plate II.c — Alcove composition",
@@ -401,7 +401,7 @@ export const muralSectionData = {
         width: 1600,
         height: 1200,
         featuredInArchive: true,
-        isSamplePlaceholder: true,
+        isSamplePlaceholder: false,
       },
       detailImage: {
         id: "mural-04",
@@ -410,8 +410,8 @@ export const muralSectionData = {
         categoryLabel: "Murals & Painted Spaces",
         medium: "Continuous single-line charcoal and muted olive wash",
         dimensionsOrDuration: "Frieze elevation",
-        year: "Sample Commission",
-        locationOrClient: "[Neighborhood Bistro Placeholder]",
+        year: "Architectural Series",
+        locationOrClient: "Neighborhood Bistro",
         description:
           "Elevation study of the continuous horizontal frieze balancing generous unpainted wall space with rhythmic figurative motifs.",
         annotation: "Plate II.d — Frieze elevation",
@@ -421,7 +421,7 @@ export const muralSectionData = {
         width: 1600,
         height: 1000,
         featuredInArchive: true,
-        isSamplePlaceholder: true,
+        isSamplePlaceholder: false,
       },
     },
   ] satisfies MuralProject[],

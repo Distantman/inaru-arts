@@ -196,7 +196,7 @@ export function ServicesAndContactSection() {
               <div className="bg-[#F6F1E8] border border-[#1D1A17]/15 p-6 sm:p-8 space-y-5">
                 <div className="flex items-center justify-between gap-4">
                   <span className="text-[11px] uppercase tracking-[0.2em] text-[#6E655C]">
-                    Direct Studio Email (Configurable)
+                    Direct Studio Email
                   </span>
                   <Mail className="w-4 h-4 text-[#B46248]" />
                 </div>
@@ -240,10 +240,10 @@ export function ServicesAndContactSection() {
                 </div>
               </div>
 
-              {/* Configurable Social Links */}
+              {/* Social Links */}
               <div className="pt-2">
                 <span className="text-[11px] uppercase tracking-[0.2em] text-[#6E655C] block mb-4">
-                  Elsewhere & Sketchbook Dispatches (Configurable Links)
+                  Elsewhere & Sketchbook Dispatches
                 </span>
                 <div className="flex flex-wrap items-center gap-6">
                   {[
@@ -284,7 +284,7 @@ export function ServicesAndContactSection() {
                   </h3>
                   <p className="text-xs text-[#6E655C] mt-1">
                     Select a discipline and add optional details below to open a
-                    pre-addressed email in your mail client—no server middleman.
+                    pre-addressed email in your mail client.
                   </p>
                 </div>
 
@@ -379,7 +379,7 @@ export function ServicesAndContactSection() {
         </div>
       </section>
 
-      {/* Editorial Colophon Footer */}
+      {/* Editorial Footer */}
       <footer className="bg-[#1D1A17] text-[#E6DDD0] py-16">
         <div className="mx-auto max-w-[1400px] px-5 sm:px-8 lg:px-12">
           <HandDrawnDivider className="opacity-40 mb-8" />
@@ -438,14 +438,11 @@ export function ServicesAndContactSection() {
 
             <div className="md:col-span-3 space-y-2 text-xs text-[#BFB4A4]">
               <span className="uppercase tracking-[0.2em] text-[#C48778] block mb-2">
-                Colophon & Asset Guide
+                Studio & Commissions
               </span>
               <p className="leading-relaxed">
-                Curated sample plates are stored locally in{" "}
-                <code className="text-[#F6F1E8]">/public/images/</code> and
-                documented in{" "}
-                <code className="text-[#F6F1E8]">IMAGE-GUIDE.md</code> for
-                effortless replacement.
+                Available internationally for live wedding illustration,
+                site-specific interior murals, and observational drawing salons.
               </p>
             </div>
           </div>

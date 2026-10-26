@@ -23,6 +23,24 @@
       "Segoe UI", Roboto, "Carlito", sans-serif;
   }
 
+  html.dark {
+    --bg-ivory: #151311;
+    --bg-paper: #1e1b18;
+    --bg-linen: #26221e;
+    --bg-charcoal: #0f0d0b;
+    --ink-charcoal: #f5efe6;
+    --ink-walnut: #d8cfc2;
+    --ink-muted: #a89d8f;
+    --ink-faint: #7d7367;
+    --accent-terracotta: #d98266;
+    --accent-rose: #d49a8b;
+    --accent-ochre: #d4a962;
+    --accent-olive: #9aa682;
+    --rule-hairline: rgba(245, 239, 230, 0.13);
+    --rule-strong: rgba(245, 239, 230, 0.28);
+    color-scheme: dark;
+  }
+
   html {
     scroll-behavior: smooth;
     background-color: var(--bg-ivory);
@@ -30,6 +48,7 @@
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    transition: background-color 0.35s ease, color 0.35s ease;
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -47,8 +66,8 @@
   }
 
   ::selection {
-    background-color: rgba(180, 98, 72, 0.22);
-    color: #1d1a17;
+    background-color: rgba(180, 98, 72, 0.28);
+    color: var(--ink-charcoal);
   }
 }
 
@@ -70,6 +89,114 @@
     radial-gradient(rgba(29, 26, 23, 0.035) 1px, transparent 0);
   background-size: 28px 28px;
   background-position: 0 0, 14px 14px;
+  transition: background-color 0.35s ease, color 0.35s ease;
+}
+
+html.dark .paper-grain-bg {
+  background-color: #151311;
+  background-image: radial-gradient(
+      rgba(217, 130, 102, 0.055) 1px,
+      transparent 0
+    ),
+    radial-gradient(rgba(245, 239, 230, 0.03) 1px, transparent 0);
+}
+
+/* Nocturne / Evening Gallery Dark Mode Overrides */
+html.dark .bg-\[\#F6F1E8\] {
+  background-color: #161412 !important;
+}
+html.dark .bg-\[\#F6F1E8\]\/95 {
+  background-color: rgba(22, 20, 18, 0.95) !important;
+}
+html.dark .bg-\[\#F6F1E8\]\/92 {
+  background-color: rgba(22, 20, 18, 0.92) !important;
+}
+html.dark .bg-\[\#F6F1E8\]\/80 {
+  background-color: rgba(30, 27, 24, 0.85) !important;
+}
+html.dark .bg-\[\#F6F1E8\]\/60 {
+  background-color: rgba(30, 27, 24, 0.65) !important;
+}
+
+html.dark .bg-\[\#EFE8DC\],
+html.dark .bg-\[\#EFE8DC\]\/85,
+html.dark .bg-\[\#EFE8DC\]\/75,
+html.dark .bg-\[\#EFE8DC\]\/70,
+html.dark .bg-\[\#EFE8DC\]\/65,
+html.dark .bg-\[\#EFE8DC\]\/60,
+html.dark .bg-\[\#EFE8DC\]\/55 {
+  background-color: #1e1b18 !important;
+}
+
+html.dark .bg-\[\#E6DDD0\],
+html.dark .bg-\[\#E6DDD0\]\/75,
+html.dark .bg-\[\#E6DDD0\]\/65 {
+  background-color: #26221e !important;
+}
+
+html.dark #murals {
+  background-color: #100e0c !important;
+}
+
+html.dark .text-\[\#1D1A17\],
+html.dark .text-\[\#1D1A17\]\/85 {
+  color: #f5efe6 !important;
+}
+
+html.dark .text-\[\#433429\],
+html.dark .text-\[\#433429\]\/85,
+html.dark .text-\[\#433429\]\/60,
+html.dark .text-\[\#433429\]\/45 {
+  color: #d8cfc2 !important;
+}
+
+html.dark .text-\[\#6E655C\] {
+  color: #a89d8f !important;
+}
+
+html.dark .text-\[\#B46248\] {
+  color: #d98266 !important;
+}
+
+html.dark .text-\[\#687156\] {
+  color: #9aa682 !important;
+}
+
+html.dark .border-\[\#1D1A17\]\/10,
+html.dark .border-\[\#1D1A17\]\/12,
+html.dark .border-\[\#1D1A17\]\/15,
+html.dark .border-\[\#1D1A17\]\/18,
+html.dark .border-\[\#1D1A17\]\/20,
+html.dark .border-\[\#1D1A17\]\/25 {
+  border-color: rgba(245, 239, 230, 0.14) !important;
+}
+
+html.dark .border-\[\#1D1A17\]\/30,
+html.dark .border-\[\#1D1A17\]\/35,
+html.dark .border-\[\#1D1A17\] {
+  border-color: rgba(245, 239, 230, 0.34) !important;
+}
+
+html.dark .divide-\[\#1D1A17\]\/12 > :not(:last-child) {
+  border-color: rgba(245, 239, 230, 0.14) !important;
+}
+
+/* Primary & Outlined Buttons in Nocturne Mode */
+html.dark a.bg-\[\#1D1A17\],
+html.dark button.bg-\[\#1D1A17\] {
+  background-color: #c46d52 !important;
+  color: #f6f1e8 !important;
+  border-color: #c46d52 !important;
+}
+html.dark a.bg-\[\#1D1A17\]:hover,
+html.dark button.bg-\[\#1D1A17\]:hover {
+  background-color: #d98266 !important;
+  color: #151311 !important;
+}
+
+html.dark .hover\:bg-\[\#1D1A17\]:hover {
+  background-color: #f5efe6 !important;
+  color: #151311 !important;
 }
 
 /* Editorial hairlines */
@@ -83,11 +210,11 @@
   height: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #efe8dc;
+  background: var(--bg-paper);
 }
 ::-webkit-scrollbar-thumb {
-  background: #bfb4a4;
+  background: #8e8375;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #988e82;
+  background: #b46248;
 }

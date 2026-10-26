@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { ArrowUpRight, Menu, X } from "lucide-react";
+import { ArrowUpRight, Menu, Moon, Sun, X } from "lucide-react";
 import { artistProfile } from "@/lib/portfolio-data";
 
 const primaryNavLinks = [
@@ -24,8 +24,12 @@ const disciplineQuickLinks = [
 export function Navigation() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isDark, setIsDark] = useState(false);
 
   useEffect(() => {
+    const isCurrentlyDark = document.documentElement.classList.contains("dark");
+    setIsDark(isCurrentlyDark);
+
     const handleScroll = () => {
       setScrolled(window.scrollY > 32);
     };
@@ -33,6 +37,22 @@ export function Navigation() {
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const toggleTheme = () => {
+    const nextDark = !isDark;
+    setIsDark(nextDark);
+    if (nextDark) {
+      document.documentElement.classList.add("dark");
+      try {
+        localStorage.setItem("inaru-theme", "dark");
+      } catch {}
+    } else {
+      document.documentElement.classList.remove("dark");
+      try {
+        localStorage.setItem("inaru-theme", "light");
+      } catch {}
+    }
+  };
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -85,8 +105,32 @@ export function Navigation() {
             ))}
           </nav>
 
-          {/* Right Editorial Commission Link + Mobile Menu Button */}
-          <div className="flex items-center gap-4">
+          {/* Right Editorial Theme Toggle + Commission Link + Mobile Menu Button */}
+          <div className="flex items-center gap-3 sm:gap-4">
+            <button
+              type="button"
+              onClick={toggleTheme}
+              aria-label={
+                isDark
+                  ? "Switch to Daylight Paper mode"
+                  : "Switch to Nocturne Evening Gallery dark mode"
+              }
+              title={isDark ? "Daylight Mode" : "Nocturne Mode"}
+              className="inline-flex items-center gap-2 border border-[#1D1A17]/20 px-3 py-2 text-[11px] uppercase tracking-[0.16em] text-[#1D1A17] hover:border-[#B46248] hover:text-[#B46248] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#B46248]"
+            >
+              {isDark ? (
+                <>
+                  <Sun className="w-3.5 h-3.5 text-[#D4A962]" />
+                  <span className="hidden lg:inline">Daylight</span>
+                </>
+              ) : (
+                <>
+                  <Moon className="w-3.5 h-3.5 text-[#B46248]" />
+                  <span className="hidden lg:inline">Nocturne</span>
+                </>
+              )}
+            </button>
+
             <a
               href="#contact"
               className="hidden sm:inline-flex items-center gap-1.5 border border-[#1D1A17]/30 px-4 py-2 text-[11px] uppercase tracking-[0.18em] text-[#1D1A17] hover:bg-[#1D1A17] hover:text-[#F6F1E8] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#B46248]"
@@ -100,7 +144,11 @@ export function Navigation() {
               onClick={() => setMobileMenuOpen((prev) => !prev)}
               aria-expanded={mobileMenuOpen}
               aria-controls="mobile-navigation-drawer"
-              aria-label={mobileMenuOpen ? "Close navigation menu" : "Open navigation menu"}
+              aria-label={
+                mobileMenuOpen
+                  ? "Close navigation menu"
+                  : "Open navigation menu"
+              }
               className="md:hidden inline-flex items-center justify-center p-2 text-[#1D1A17] hover:text-[#B46248] border border-[#1D1A17]/15 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#B46248]"
             >
               {mobileMenuOpen ? (
@@ -171,8 +219,26 @@ export function Navigation() {
                 </div>
               </div>
 
-              <div className="pt-8 border-t border-[#1D1A17]/12 mt-8">
-                <p className="font-editorial italic text-base text-[#433429] mb-3">
+              <div className="pt-8 border-t border-[#1D1A17]/12 mt-8 space-y-4">
+                <button
+                  type="button"
+                  onClick={toggleTheme}
+                  className="inline-flex items-center gap-2 border border-[#1D1A17]/20 px-4 py-2.5 text-xs uppercase tracking-[0.16em] text-[#1D1A17]"
+                >
+                  {isDark ? (
+                    <>
+                      <Sun className="w-4 h-4 text-[#D4A962]" />
+                      <span>Switch to Daylight Mode</span>
+                    </>
+                  ) : (
+                    <>
+                      <Moon className="w-4 h-4 text-[#B46248]" />
+                      <span>Switch to Nocturne Dark Mode</span>
+                    </>
+                  )}
+                </button>
+
+                <p className="font-editorial italic text-base text-[#433429]">
                   {artistProfile.availabilityBanner}
                 </p>
                 <a

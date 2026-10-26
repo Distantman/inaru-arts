@@ -191,6 +191,18 @@ export function LightboxModal({
                         </dd>
                       </div>
                     )}
+
+                    <div className="bg-[#EFE8DC] p-3 border border-[#1D1A17]/10 text-[11px] text-[#6E655C] space-y-1">
+                      <div>
+                        Temporary curated sample plate (
+                        <code>{artwork.image}</code>). Replaceable anytime via{" "}
+                        <code>IMAGE-GUIDE.md</code>.
+                      </div>
+                      <div className="text-[#433429] font-medium">
+                        Recommended dimensions: {artwork.width} ×{" "}
+                        {artwork.height} px
+                      </div>
+                    </div>
                   </dl>
                 </div>
 

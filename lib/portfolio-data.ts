@@ -145,9 +145,9 @@ export const heroData = {
       annotation: "Site study — mineral wash on plaster",
       image: "/images/hero-mural-detail.jpg",
       alt: "Warm minimalist wall mural inside a sunlit café featuring terracotta and charcoal line art",
-      aspectRatio: "landscape-editorial" as const,
-      width: 1400,
-      height: 875,
+      aspectRatio: "portrait-editorial" as const,
+      width: 1050,
+      height: 1350,
       isSamplePlaceholder: true,
     },
     tertiaryLiveSketch: {

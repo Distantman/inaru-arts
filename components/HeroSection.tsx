@@ -153,12 +153,12 @@ export function HeroSection({ onSelectArtwork }: HeroSectionProps) {
                 className="hidden sm:block absolute -top-4 right-4 w-[78%] h-[82%] bg-[#E6DDD0]/75 border border-[#1D1A17]/10 -rotate-1"
               />
 
-              {/* Primary Centerpiece Figure Study (Top Right / Center) */}
+              {/* Primary Centerpiece Figure Study (Top Right / Center — 1200x1500, 4:5) */}
               <motion.div
                 initial={{ opacity: 0, y: 24 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.75, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
-                className="relative z-10 ml-auto w-full sm:w-[82%]"
+                className="relative z-10 ml-auto w-full sm:w-[76%]"
               >
                 <button
                   type="button"
@@ -183,12 +183,12 @@ export function HeroSection({ onSelectArtwork }: HeroSectionProps) {
                 </button>
               </motion.div>
 
-              {/* Overlapping Secondary Architectural Mural Plate (Bottom Left) */}
+              {/* Overlapping Secondary Vertical Plate (Middle-Bottom Left — 1050x1350, 7:9) */}
               <motion.div
                 initial={{ opacity: 0, x: -20, y: 20 }}
                 animate={{ opacity: 1, x: 0, y: 0 }}
                 transition={{ duration: 0.75, delay: 0.28, ease: [0.22, 1, 0.36, 1] }}
-                className="relative z-20 -mt-16 sm:-mt-28 w-[78%] sm:w-[62%] mr-auto"
+                className="relative z-20 -mt-20 sm:-mt-40 w-[72%] sm:w-[54%] mr-auto"
               >
                 <button
                   type="button"
@@ -196,8 +196,8 @@ export function HeroSection({ onSelectArtwork }: HeroSectionProps) {
                   aria-label={`Inspect ${secondaryMural.title} in lightbox`}
                   className="group block w-full text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-[#B46248]"
                 >
-                  <div className="bg-[#F6F1E8] p-2.5 sm:p-3.5 border border-[#1D1A17]/18 shadow-[0_20px_45px_-15px_rgba(29,26,23,0.3)]">
-                    <div className="relative aspect-[16/10] w-full overflow-hidden bg-[#EFE8DC]">
+                  <div className="bg-[#F6F1E8] p-2.5 sm:p-3 border border-[#1D1A17]/18 shadow-[0_20px_45px_-15px_rgba(29,26,23,0.3)] -rotate-1 transition-transform duration-300 group-hover:rotate-0">
+                    <div className="relative aspect-[7/9] w-full overflow-hidden bg-[#EFE8DC]">
                       <img
                         src={secondaryMural.image}
                         alt={secondaryMural.alt}
@@ -218,12 +218,12 @@ export function HeroSection({ onSelectArtwork }: HeroSectionProps) {
                 </button>
               </motion.div>
 
-              {/* Overlapping Tertiary Live Wedding Sketch Card (Bottom Right) */}
+              {/* Overlapping Tertiary Live Wedding Sketch Card (Bottom Right — 900x1200, 3:4) */}
               <motion.div
                 initial={{ opacity: 0, y: 28 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.75, delay: 0.42, ease: [0.22, 1, 0.36, 1] }}
-                className="relative sm:absolute z-30 mt-6 sm:mt-0 sm:bottom-2 sm:right-2 w-[68%] sm:w-[42%] ml-auto"
+                className="relative sm:absolute z-30 mt-6 sm:mt-0 sm:bottom-2 sm:right-2 w-[62%] sm:w-[42%] ml-auto"
               >
                 <button
                   type="button"

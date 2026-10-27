@@ -24,7 +24,7 @@ All artwork and photography on this website are stored locally in **`public/imag
 | Filename | Purpose / Placement | Recommended Orientation | Suggested Dimensions (px) | Aspect Ratio |
 | :--- | :--- | :--- | :--- | :--- |
 | `hero-main-sketchbook.jpg` | Primary centerpiece artwork in the Hero collage | Portrait (Editorial) | `1200 × 1500` | `4:5` |
-| `hero-mural-detail.jpg` | Secondary overlapping architectural mural photo (bottom-left of Hero) | Landscape (Editorial) | `1400 × 875` | `16:10` |
+| `hero-mural-detail.jpg` | Secondary overlapping vertical plate (middle-left of Hero) | Portrait (Medium Vertical) | `1050 × 1350` | `7:9` |
 | `hero-gesture-study.jpg` | Floating live sketch card (bottom-right of Hero) | Portrait | `900 × 1200` | `3:4` |
 
 ---

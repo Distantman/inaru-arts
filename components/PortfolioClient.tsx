@@ -11,7 +11,6 @@ import { HeroSection } from "./HeroSection";
 import { WeddingSection } from "./WeddingSection";
 import { MuralsSection } from "./MuralsSection";
 import { FashionSection } from "./FashionSection";
-import { WorkshopsSection } from "./WorkshopsSection";
 import { PersonalArchiveSection } from "./PersonalArchiveSection";
 import { AboutSection } from "./AboutSection";
 import { ServicesAndContactSection } from "./ServicesAndContactSection";
@@ -56,7 +55,7 @@ export function PortfolioClient() {
                 Selected Works & Exhibition Chapters
               </span>
               <p className="font-editorial text-2xl sm:text-3xl text-[#1D1A17]">
-                Five disciplines united by direct observation and the drawn line.
+                Four disciplines united by direct observation and the drawn line.
               </p>
             </div>
             <HandDrawnDivider className="py-0 hidden lg:flex" />
@@ -67,20 +66,17 @@ export function PortfolioClient() {
           </div>
         </div>
 
-        {/* Chapter 01: Live Wedding Illustration */}
-        <WeddingSection onSelectArtwork={setSelectedArtwork} />
-
-        {/* Chapter 02: Murals & Painted Spaces */}
+        {/* Chapter 01 (formerly 02): Murals & Painted Spaces */}
         <MuralsSection onSelectArtwork={setSelectedArtwork} />
 
-        {/* Chapter 03: Fashion & Figure Drawing */}
-        <FashionSection onSelectArtwork={setSelectedArtwork} />
-
-        {/* Chapter 04: Drawing Classes & Workshops */}
-        <WorkshopsSection onSelectArtwork={setSelectedArtwork} />
-
-        {/* Chapter 05: Personal Work & Interactive Archive */}
+        {/* Chapter 02 (formerly 05): Personal Work & Interactive Archive */}
         <PersonalArchiveSection onSelectArtwork={setSelectedArtwork} />
+
+        {/* Chapter 03 (formerly 01): Live Wedding Illustration */}
+        <WeddingSection onSelectArtwork={setSelectedArtwork} />
+
+        {/* Chapter 04 (formerly 03): Fashion & Figure Drawing */}
+        <FashionSection onSelectArtwork={setSelectedArtwork} />
 
         {/* Biography & Studio Philosophy */}
         <AboutSection />

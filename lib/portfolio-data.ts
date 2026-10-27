@@ -171,7 +171,7 @@ export const heroData = {
 };
 
 export const weddingSectionData = {
-  chapterNumber: "01",
+  chapterNumber: "03",
   eyebrow: "Live Wedding & Event Illustration",
   title: "Intimate portraits drawn in the warmth of the moment.",
   lead: "Far more tactile than a photograph, a live illustration captures how an evening felt—the tilt of a shoulder in conversation, the movement of silk, the quiet humor between old friends.",
@@ -303,7 +303,7 @@ export const weddingSectionData = {
 };
 
 export const muralSectionData = {
-  chapterNumber: "02",
+  chapterNumber: "01",
   eyebrow: "Murals & Painted Spaces",
   title: "Hand-painted walls that give architecture a human pulse.",
   lead: "When a drawing leaves the sketchbook and scales to a wall, the brush responds to plaster grain, ceiling height, and the way afternoon light moves across a room.",
@@ -428,7 +428,7 @@ export const muralSectionData = {
 };
 
 export const fashionSectionData = {
-  chapterNumber: "03",
+  chapterNumber: "04",
   eyebrow: "Fashion & Figure Drawing",
   title: "The anatomy of drape, posture, and the fleeting gesture.",
   lead: "Rooted in classical life drawing and the visual language of independent fashion journals, these works explore how a single decisive line can suggest volume, weight, and stillness.",
@@ -689,7 +689,7 @@ export const workshopsSectionData = {
 };
 
 export const personalSectionData = {
-  chapterNumber: "05",
+  chapterNumber: "02",
   eyebrow: "Personal Work, Studies & Archive",
   title: "From the flat files & working sketchbooks.",
   lead: "Alongside commissioned murals and live events, my studio practice is anchored by daily observation—still lifes on the kitchen table, architectural corners noticed in transit, and experimental works on paper.",
@@ -972,9 +972,8 @@ export const servicesData: ServiceOffering[] = [
 // Combined curated archive for the interactive Lightbox and filterable gallery
 export const allPortfolioArtworks: ArtworkItem[] = [
   heroData.collage.mainArtwork,
-  ...weddingSectionData.artworks,
   ...muralSectionData.projects.flatMap((p) => [p.primaryImage, p.detailImage]),
-  ...fashionSectionData.artworks,
-  ...workshopsSectionData.gallery,
   ...personalSectionData.artworks,
+  ...weddingSectionData.artworks,
+  ...fashionSectionData.artworks,
 ];

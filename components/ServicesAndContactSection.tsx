@@ -404,33 +404,28 @@ export function ServicesAndContactSection() {
               </span>
               <ul className="grid grid-cols-2 gap-2 text-[#BFB4A4]">
                 <li>
-                  <a href="#weddings" className="hover:text-[#F6F1E8]">
-                    01. Live Weddings
-                  </a>
-                </li>
-                <li>
                   <a href="#murals" className="hover:text-[#F6F1E8]">
-                    02. Painted Spaces
-                  </a>
-                </li>
-                <li>
-                  <a href="#fashion" className="hover:text-[#F6F1E8]">
-                    03. Fashion & Figure
-                  </a>
-                </li>
-                <li>
-                  <a href="#workshops" className="hover:text-[#F6F1E8]">
-                    04. Workshops
+                    01. Painted Spaces
                   </a>
                 </li>
                 <li>
                   <a href="#archive" className="hover:text-[#F6F1E8]">
-                    05. Studio Archive
+                    02. Studio Archive
+                  </a>
+                </li>
+                <li>
+                  <a href="#weddings" className="hover:text-[#F6F1E8]">
+                    03. Live Weddings
+                  </a>
+                </li>
+                <li>
+                  <a href="#fashion" className="hover:text-[#F6F1E8]">
+                    04. Fashion & Figure
                   </a>
                 </li>
                 <li>
                   <a href="#about" className="hover:text-[#F6F1E8]">
-                    06. Biography
+                    05. Biography
                   </a>
                 </li>
               </ul>

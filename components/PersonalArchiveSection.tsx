@@ -18,10 +18,9 @@ interface PersonalArchiveSectionProps {
 const filterTabs: { id: DisciplineCategory; label: string }[] = [
   { id: "personal", label: "Personal Studies & Commissions" },
   { id: "all", label: "Complete Curated Archive" },
-  { id: "wedding", label: "Live Weddings" },
   { id: "murals", label: "Painted Spaces" },
+  { id: "wedding", label: "Live Weddings" },
   { id: "fashion", label: "Fashion & Figure" },
-  { id: "workshops", label: "Workshops" },
 ];
 
 export function PersonalArchiveSection({

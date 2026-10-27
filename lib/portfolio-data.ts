@@ -1012,7 +1012,7 @@ export const modelingRunwaySectionData = {
       isSamplePlaceholder: true,
     };
   }) satisfies ArtworkItem[],
-  bottomRowArtworks: Array.from({ length: 9 }, (_, i) => {
+  bottomRowArtworks: Array.from({ length: 10 }, (_, i) => {
     const idx = i + 10;
     const num = String(idx).padStart(2, "0");
     const mediums = [

@@ -414,18 +414,23 @@ export function ServicesAndContactSection() {
                   </a>
                 </li>
                 <li>
+                  <a href="#modeling" className="hover:text-[#F6F1E8]">
+                    03. Modeling & Runway
+                  </a>
+                </li>
+                <li>
                   <a href="#weddings" className="hover:text-[#F6F1E8]">
-                    03. Live Weddings
+                    04. Live Weddings
                   </a>
                 </li>
                 <li>
                   <a href="#fashion" className="hover:text-[#F6F1E8]">
-                    04. Fashion & Figure
+                    05. Fashion & Figure
                   </a>
                 </li>
                 <li>
                   <a href="#about" className="hover:text-[#F6F1E8]">
-                    05. Biography
+                    06. Biography
                   </a>
                 </li>
               </ul>

@@ -2,6 +2,7 @@ export type DisciplineCategory =
   | "all"
   | "wedding"
   | "murals"
+  | "modeling"
   | "fashion"
   | "workshops"
   | "personal";
@@ -171,7 +172,7 @@ export const heroData = {
 };
 
 export const weddingSectionData = {
-  chapterNumber: "03",
+  chapterNumber: "04",
   eyebrow: "Live Wedding & Event Illustration",
   title: "Intimate portraits drawn in the warmth of the moment.",
   lead: "Far more tactile than a photograph, a live illustration captures how an evening felt—the tilt of a shoulder in conversation, the movement of silk, the quiet humor between old friends.",
@@ -428,7 +429,7 @@ export const muralSectionData = {
 };
 
 export const fashionSectionData = {
-  chapterNumber: "04",
+  chapterNumber: "05",
   eyebrow: "Fashion & Figure Drawing",
   title: "The anatomy of drape, posture, and the fleeting gesture.",
   lead: "Rooted in classical life drawing and the visual language of independent fashion journals, these works explore how a single decisive line can suggest volume, weight, and stillness.",
@@ -969,11 +970,91 @@ export const servicesData: ServiceOffering[] = [
   },
 ];
 
+export const modelingRunwaySectionData = {
+  chapterNumber: "03",
+  eyebrow: "Modeling & Runway Drawing Arts",
+  title: "Silhouette in motion — the runway drawn in real time.",
+  lead: "Two counter-moving streams of gesture, drape, and stride—capturing the cadence of the catwalk and the sculptural poise of live modeling.",
+  description:
+    "Drawn from runway presentations, atelier fittings, and live modeling sessions using rapid sumi ink, charcoal, and mineral wash. Each vertical plate distills a passing look into a few decisive strokes.",
+  ctaLabel: "Commission Runway & Modeling Illustration",
+  inquirySubject: "Modeling & Runway Illustration Commission",
+  topRowArtworks: Array.from({ length: 9 }, (_, i) => {
+    const num = String(i + 1).padStart(2, "0");
+    const mediums = [
+      "Sumi ink & walnut wash on 300g cotton rag",
+      "Charcoal contour & muted terracotta wash",
+      "Sanguine chalk & reed pen on toned paper",
+    ];
+    const subtitles = [
+      "Runway stride & structured coat study",
+      " Draped silk silhouette in motion",
+      "Backstage poise & collar study",
+    ];
+    return {
+      id: `runway-model-${num}`,
+      title: `Look ${num} — Runway Silhouette Study`,
+      subtitle: subtitles[i % subtitles.length],
+      category: "modeling" as const,
+      categoryLabel: "Modeling & Runway",
+      medium: mediums[i % mediums.length],
+      dimensionsOrDuration: "29.7 × 42 cm (A3) — Live catwalk study",
+      year: "Runway Series",
+      description:
+        "Expressive vertical runway illustration capturing the kinetic rhythm, fabric movement, and architectural posture of a model in motion.",
+      annotation: `Look ${num} — Series A`,
+      image: `/images/runway-model-${num}.jpg`,
+      alt: `Runway modeling illustration Look ${num} in ink and watercolor wash`,
+      aspectRatio: "portrait-tall" as const,
+      width: 1000,
+      height: 1500,
+      featuredInArchive: i < 3,
+      isSamplePlaceholder: true,
+    };
+  }) satisfies ArtworkItem[],
+  bottomRowArtworks: Array.from({ length: 9 }, (_, i) => {
+    const idx = i + 10;
+    const num = String(idx).padStart(2, "0");
+    const mediums = [
+      "Japanese hake brush, sumi ink & ochre wash",
+      "Vine charcoal, graphite & dusty rose pigment",
+      "Fountain pen nib & olive-umber mineral wash",
+    ];
+    const subtitles = [
+      "Catwalk turn & flowing hem gesture",
+      "Sculptural tailoring & shadow study",
+      "Atelier fitting & continuous contour line",
+    ];
+    return {
+      id: `runway-model-${num}`,
+      title: `Look ${num} — Catwalk Gesture Study`,
+      subtitle: subtitles[i % subtitles.length],
+      category: "modeling" as const,
+      categoryLabel: "Modeling & Runway",
+      medium: mediums[i % mediums.length],
+      dimensionsOrDuration: "29.7 × 42 cm (A3) — Live catwalk study",
+      year: "Runway Series",
+      description:
+        "Drawn directly from movement, emphasizing the interplay between garment volume, negative space, and the model's stride.",
+      annotation: `Look ${num} — Series B`,
+      image: `/images/runway-model-${num}.jpg`,
+      alt: `Runway modeling illustration Look ${num} in charcoal and mineral wash`,
+      aspectRatio: "portrait-tall" as const,
+      width: 1000,
+      height: 1500,
+      featuredInArchive: i < 3,
+      isSamplePlaceholder: true,
+    };
+  }) satisfies ArtworkItem[],
+};
+
 // Combined curated archive for the interactive Lightbox and filterable gallery
 export const allPortfolioArtworks: ArtworkItem[] = [
   heroData.collage.mainArtwork,
   ...muralSectionData.projects.flatMap((p) => [p.primaryImage, p.detailImage]),
   ...personalSectionData.artworks,
+  ...modelingRunwaySectionData.topRowArtworks,
+  ...modelingRunwaySectionData.bottomRowArtworks,
   ...weddingSectionData.artworks,
   ...fashionSectionData.artworks,
 ];

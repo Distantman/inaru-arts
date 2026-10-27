@@ -15,8 +15,9 @@ const primaryNavLinks = [
 const disciplineQuickLinks = [
   { number: "01", label: "Murals & Painted Spaces", href: "#murals" },
   { number: "02", label: "Personal Archive", href: "#archive" },
-  { number: "03", label: "Live Wedding Illustration", href: "#weddings" },
-  { number: "04", label: "Fashion & Figure Drawing", href: "#fashion" },
+  { number: "03", label: "Modeling & Runway Arts", href: "#modeling" },
+  { number: "04", label: "Live Wedding Illustration", href: "#weddings" },
+  { number: "05", label: "Fashion & Figure Drawing", href: "#fashion" },
 ];
 
 export function Navigation() {

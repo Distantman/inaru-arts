@@ -119,12 +119,13 @@ export function HeroSection({ onSelectArtwork }: HeroSectionProps) {
               </div>
 
               {/* Discipline Jump Bar */}
-              <div className="mt-7 pt-5 border-t border-[#1D1A17]/10 grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs">
+              <div className="mt-7 pt-5 border-t border-[#1D1A17]/10 grid grid-cols-2 sm:grid-cols-5 gap-3 text-xs">
                 {[
                   { num: "I", name: "Murals", href: "#murals" },
                   { num: "II", name: "Archive", href: "#archive" },
-                  { num: "III", name: "Weddings", href: "#weddings" },
-                  { num: "IV", name: "Fashion & Figure", href: "#fashion" },
+                  { num: "III", name: "Runway", href: "#modeling" },
+                  { num: "IV", name: "Weddings", href: "#weddings" },
+                  { num: "V", name: "Fashion & Figure", href: "#fashion" },
                 ].map((ch) => (
                   <a
                     key={ch.num}

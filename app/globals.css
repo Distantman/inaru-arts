@@ -204,6 +204,46 @@ html.dark .hover\:bg-\[\#1D1A17\]:hover {
   border-color: var(--rule-hairline);
 }
 
+/* Infinite Counter-Flow Runway Marquee Animations */
+@keyframes runway-scroll-left {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@keyframes runway-scroll-right {
+  0% {
+    transform: translate3d(-50%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.animate-runway-left {
+  display: flex;
+  width: max-content;
+  animation: runway-scroll-left var(--runway-duration, 48s) linear infinite;
+  will-change: transform;
+}
+
+.animate-runway-right {
+  display: flex;
+  width: max-content;
+  animation: runway-scroll-right var(--runway-duration, 48s) linear infinite;
+  will-change: transform;
+}
+
+.runway-track-container:hover .animate-runway-left,
+.runway-track-container:hover .animate-runway-right,
+.runway-paused .animate-runway-left,
+.runway-paused .animate-runway-right {
+  animation-play-state: paused;
+}
+
 /* Custom subtle scrollbar */
 ::-webkit-scrollbar {
   width: 8px;

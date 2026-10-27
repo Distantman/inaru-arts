@@ -415,7 +415,7 @@ export function ServicesAndContactSection() {
                 </li>
                 <li>
                   <a href="#modeling" className="hover:text-[#F6F1E8]">
-                    03. Modeling & Runway
+                    03. Runway & Model Studies
                   </a>
                 </li>
                 <li>

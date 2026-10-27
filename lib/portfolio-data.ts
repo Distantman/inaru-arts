@@ -972,13 +972,13 @@ export const servicesData: ServiceOffering[] = [
 
 export const modelingRunwaySectionData = {
   chapterNumber: "03",
-  eyebrow: "Modeling & Runway Drawing Arts",
+  eyebrow: "Runway & Live Model Studies",
   title: "Silhouette in motion — the runway drawn in real time.",
   lead: "Two counter-moving streams of gesture, drape, and stride—capturing the cadence of the catwalk and the sculptural poise of live modeling.",
   description:
-    "Drawn from runway presentations, atelier fittings, and live modeling sessions using rapid sumi ink, charcoal, and mineral wash. Each vertical plate distills a passing look into a few decisive strokes.",
-  ctaLabel: "Commission Runway & Modeling Illustration",
-  inquirySubject: "Modeling & Runway Illustration Commission",
+    "Drawn from runway presentations, atelier fittings, and live model sessions using rapid sumi ink, charcoal, and mineral wash. Each vertical plate distills a passing look into a few decisive strokes.",
+  ctaLabel: "Commission Runway & Model Studies",
+  inquirySubject: "Runway & Live Model Studies Commission",
   topRowArtworks: Array.from({ length: 9 }, (_, i) => {
     const num = String(i + 1).padStart(2, "0");
     const mediums = [
@@ -988,7 +988,7 @@ export const modelingRunwaySectionData = {
     ];
     const subtitles = [
       "Runway stride & structured coat study",
-      " Draped silk silhouette in motion",
+      "Draped silk silhouette in motion",
       "Backstage poise & collar study",
     ];
     return {
@@ -996,7 +996,7 @@ export const modelingRunwaySectionData = {
       title: `Look ${num} — Runway Silhouette Study`,
       subtitle: subtitles[i % subtitles.length],
       category: "modeling" as const,
-      categoryLabel: "Modeling & Runway",
+      categoryLabel: "Runway & Live Model Studies",
       medium: mediums[i % mediums.length],
       dimensionsOrDuration: "29.7 × 42 cm (A3) — Live catwalk study",
       year: "Runway Series",
@@ -1004,7 +1004,7 @@ export const modelingRunwaySectionData = {
         "Expressive vertical runway illustration capturing the kinetic rhythm, fabric movement, and architectural posture of a model in motion.",
       annotation: `Look ${num} — Series A`,
       image: `/images/runway-model-${num}.jpg`,
-      alt: `Runway modeling illustration Look ${num} in ink and watercolor wash`,
+      alt: `Runway and live model study Look ${num} in ink and watercolor wash`,
       aspectRatio: "portrait-tall" as const,
       width: 1000,
       height: 1500,
@@ -1030,7 +1030,7 @@ export const modelingRunwaySectionData = {
       title: `Look ${num} — Catwalk Gesture Study`,
       subtitle: subtitles[i % subtitles.length],
       category: "modeling" as const,
-      categoryLabel: "Modeling & Runway",
+      categoryLabel: "Runway & Live Model Studies",
       medium: mediums[i % mediums.length],
       dimensionsOrDuration: "29.7 × 42 cm (A3) — Live catwalk study",
       year: "Runway Series",
@@ -1038,7 +1038,7 @@ export const modelingRunwaySectionData = {
         "Drawn directly from movement, emphasizing the interplay between garment volume, negative space, and the model's stride.",
       annotation: `Look ${num} — Series B`,
       image: `/images/runway-model-${num}.jpg`,
-      alt: `Runway modeling illustration Look ${num} in charcoal and mineral wash`,
+      alt: `Runway and live model study Look ${num} in charcoal and mineral wash`,
       aspectRatio: "portrait-tall" as const,
       width: 1000,
       height: 1500,

@@ -19,7 +19,7 @@ const filterTabs: { id: DisciplineCategory; label: string }[] = [
   { id: "personal", label: "Personal Studies & Commissions" },
   { id: "all", label: "Complete Curated Archive" },
   { id: "murals", label: "Painted Spaces" },
-  { id: "modeling", label: "Modeling & Runway" },
+  { id: "modeling", label: "Runway & Model Studies" },
   { id: "wedding", label: "Live Weddings" },
   { id: "fashion", label: "Fashion & Figure" },
 ];

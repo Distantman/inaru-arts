@@ -90,7 +90,7 @@ export const artistProfile = {
   locationPlaceholder: "Practicing internationally • Available for Commissions & Events Worldwide",
   availabilityBanner:
     "Now welcoming inquiries for 2026–2027 weddings, spatial murals, and studio workshops",
-  email: "studio@inaru-arts.com",
+  email: "studio@inaru.art",
   instagramUrl: "https://www.instagram.com/inaru_artist?psln=MXRnc29pODF1aWNnaQ==",
   instagramHandle: "@inaru_artist",
   pinterestUrl: "https://pinterest.com",

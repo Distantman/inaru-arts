@@ -91,8 +91,8 @@ export const artistProfile = {
   availabilityBanner:
     "Now welcoming inquiries for 2026–2027 weddings, spatial murals, and studio workshops",
   email: "studio@inaru-arts.com",
-  instagramUrl: "https://instagram.com",
-  instagramHandle: "@inaru.arts",
+  instagramUrl: "https://www.instagram.com/inaru_artist?psln=MXRnc29pODF1aWNnaQ==",
+  instagramHandle: "@inaru_artist",
   pinterestUrl: "https://pinterest.com",
   substackUrl: "https://substack.com",
   pressKitMailtoSubject: "Inaru Arts — Portfolio & Press Kit Request",

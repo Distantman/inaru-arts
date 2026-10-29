@@ -240,13 +240,24 @@ export function Navigation() {
                 <p className="font-editorial italic text-base text-[#433429]">
                   {artistProfile.availabilityBanner}
                 </p>
-                <a
-                  href={`mailto:${artistProfile.email}`}
-                  className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.18em] text-[#B46248] font-medium"
-                >
-                  <span>{artistProfile.email}</span>
-                  <ArrowUpRight className="w-3.5 h-3.5" />
-                </a>
+                <div className="flex flex-col gap-2">
+                  <a
+                    href={`mailto:${artistProfile.email}`}
+                    className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.18em] text-[#B46248] font-medium"
+                  >
+                    <span>{artistProfile.email}</span>
+                    <ArrowUpRight className="w-3.5 h-3.5" />
+                  </a>
+                  <a
+                    href={artistProfile.instagramUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.18em] text-[#1D1A17] hover:text-[#B46248]"
+                  >
+                    <span>Instagram {artistProfile.instagramHandle}</span>
+                    <ArrowUpRight className="w-3.5 h-3.5 text-[#B46248]" />
+                  </a>
+                </div>
               </div>
             </div>
           </motion.div>

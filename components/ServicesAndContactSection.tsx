@@ -444,6 +444,17 @@ export function ServicesAndContactSection() {
                 Available internationally for live wedding illustration,
                 site-specific interior murals, and observational drawing salons.
               </p>
+              <div className="pt-2">
+                <a
+                  href={artistProfile.instagramUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-xs uppercase tracking-[0.16em] text-[#E6DDD0] hover:text-[#C48778] transition-colors"
+                >
+                  <span>Instagram {artistProfile.instagramHandle}</span>
+                  <ArrowUpRight className="w-3.5 h-3.5 text-[#C48778]" />
+                </a>
+              </div>
             </div>
           </div>
 

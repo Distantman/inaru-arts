@@ -167,9 +167,11 @@ export function LightboxModal({
                     )}
                   </div>
 
-                  <p className="text-sm leading-relaxed text-[#433429]">
-                    {artwork.description}
-                  </p>
+                  {artwork.description && (
+                    <p className="text-sm leading-relaxed text-[#433429]">
+                      {artwork.description}
+                    </p>
+                  )}
 
                   <dl className="space-y-3 pt-4 border-t border-[#1D1A17]/12 text-xs">
                     <div>

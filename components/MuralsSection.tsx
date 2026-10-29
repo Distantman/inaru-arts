@@ -146,14 +146,16 @@ export function MuralsSection({ onSelectArtwork }: MuralsSectionProps) {
                     </div>
                     <div className="sm:col-span-5 bg-[#282420] p-4 border border-[#F6F1E8]/10">
                       <span className="text-[10px] uppercase tracking-[0.18em] text-[#C48778] block mb-1.5">
-                        Surface & Mineral Medium
+                        Surface & Medium
                       </span>
                       <p className="text-xs leading-relaxed text-[#BFB4A4]">
                         {project.surfaceAndMedium}
                       </p>
-                      <p className="font-editorial italic text-sm text-[#E6DDD0] mt-2.5 pt-2 border-t border-[#F6F1E8]/10">
-                        {project.curatorNote}
-                      </p>
+                      {project.curatorNote && (
+                        <p className="font-editorial italic text-sm text-[#E6DDD0] mt-2.5 pt-2 border-t border-[#F6F1E8]/10">
+                          {project.curatorNote}
+                        </p>
+                      )}
                     </div>
                   </div>
                 </motion.div>

@@ -47,8 +47,8 @@ All artwork and photography on this website are stored locally in **`public/imag
 | :--- | :--- | :--- | :--- | :--- |
 | `cafe-mural-01.jpg` | **Project I Primary:** The Quiet Current — Full wall view in private residence (Astrakhan) | Portrait (Editorial) | `1080 × 1450` | `~3:4 / 4:5` |
 | `cafe-mural-03.jpg` | **Project I Detail:** The Quiet Current — In-process surface detail | Portrait (Editorial) | `1200 × 1500` | `4:5` |
-| `cafe-mural-02.jpg` | **Project II Primary:** Contextual interior photograph of a corner booth, archway, or studio wall mural | Classic Landscape | `1600 × 1200` | `4:3` |
-| `cafe-mural-04.jpg` | **Project II Detail:** Frieze elevation or line art detail | Portrait | `1200 × 1600` | `3:4` |
+| `cafe-mural-02.jpg` | **Project II Primary:** Ridgeline — Mountain horizon mural in black acrylic (Moscow private interior) | Classic Landscape | `1600 × 1200` | `4:3` |
+| `cafe-mural-04.jpg` | **Project II Detail:** Pasture & Flock — Floor to ceiling shepherd and flock aerial mural (Moscow) | Portrait | `1200 × 1600` | `3:4` |
 
 ---
 

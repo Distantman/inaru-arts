@@ -816,9 +816,9 @@ export const personalSectionData = {
 
 export const aboutArtistData = {
   eyebrow: "About Inaru",
-  title: "Between the quiet of the sketchbook and the scale of the wall.",
+  title: "Biography",
   backgroundTag:
-    "Architectural Foundations (Moscow State University) • Global Observational Practice",
+    "Architectural Foundations • Global Observational Practice",
   portraitImage: {
     src: "/images/inaru.jpg",
     alt: "Portrait of Inaru, multidisciplinary visual artist and illustrator",
@@ -830,9 +830,9 @@ export const aboutArtistData = {
     caption: "Fig. B — Working table: raw earth pigments, nib pens, and travel notebooks",
   },
   leadBio:
-    "Inaru is a multidisciplinary visual artist and illustrator whose work bridges the structural clarity of architecture with the raw, spontaneous poetry of the hand-drawn line.",
+    "",
   extendedBioParagraphs: [
-    "Her formal artistic journey began at Moscow State University (MSU), where she studied architecture and developed an enduring sensitivity to spatial proportion, geometry, light, and structural harmony. Yet even amidst technical drafting tables, her truest passion was always the immediacy of freehand sketching and drawing—capturing the pulse of living spaces and the unguarded human gesture.",
+    "Her formal artistic journey began at Moscow Architectural Institute (MArchI), where she studied architecture and developed an enduring sensitivity to spatial proportion, geometry, light, and structural harmony. Yet even amidst technical drafting tables, her truest passion was always the immediacy of freehand sketching and drawing—capturing the pulse of living spaces and the unguarded human gesture.",
     "Trading static blueprints for a portable atelier of fountain pens, charcoal, and earth pigments, Inaru has traveled and practiced extensively across the world. Years of drawing on location across continents—filling linen-bound sketchbooks in sunlit courtyards, neighborhood cafés, and studios far from home—shaped a fluid, deeply observant visual language. Today, whether she is drawing wedding guests live by candlelight, painting a six-meter mural that converses with a café's architecture, or teaching students how to trust their eye, every piece remains rooted in the joy of seeing the world firsthand.",
   ],
   philosophyQuote:

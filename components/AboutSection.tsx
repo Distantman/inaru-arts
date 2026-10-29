@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Compass, Palette } from "lucide-react";
+import { Compass } from "lucide-react";
 import { aboutArtistData, artistProfile } from "@/lib/portfolio-data";
 import { BotanicalSprig } from "./SketchDecorations";
 
@@ -11,7 +11,7 @@ export function AboutSection() {
     <section
       id="about"
       aria-labelledby="about-section-heading"
-      className="relative py-24 md:py-32 border-b border-[#1D1A17]/15 bg-[#EFE8DC]/55"
+      className="relative py-20 md:py-28 border-b border-[#1D1A17]/15 bg-[#EFE8DC]/55"
     >
       <div className="mx-auto max-w-[1400px] px-5 sm:px-8 lg:px-12">
         {/* Top Editorial Eyebrow */}
@@ -23,7 +23,7 @@ export function AboutSection() {
 
         {/* Main Editorial Spread */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-start">
-          {/* Left Column: Portrait Placeholder & Studio Workbench (Cols 1-5) */}
+          {/* Left Column: Portrait & Studio Workbench (Cols 1-5) */}
           <div className="lg:col-span-5 space-y-8">
             <motion.figure
               initial={{ opacity: 0, y: 18 }}
@@ -71,7 +71,7 @@ export function AboutSection() {
             </motion.figure>
           </div>
 
-          {/* Right Column: Biography, Artistic Philosophy, Mediums & Three Pillars (Cols 6-12) */}
+          {/* Right Column: Biography & Artistic Philosophy (Cols 6-12) */}
           <div className="lg:col-span-7 space-y-8">
             <h2
               id="about-section-heading"
@@ -86,15 +86,12 @@ export function AboutSection() {
               <span>{aboutArtistData.backgroundTag}</span>
             </div>
 
-            {/* Lead & Extended Biography */}
-            <div className="space-y-5">
-              <p className="font-editorial text-2xl sm:text-[27px] leading-[1.36] text-[#1D1A17]">
-                {aboutArtistData.leadBio}
-              </p>
+            {/* Extended Biography */}
+            <div className="space-y-6 pt-1">
               {aboutArtistData.extendedBioParagraphs.map((paragraph, index) => (
                 <p
                   key={index}
-                  className="text-[15px] leading-relaxed text-[#433429]"
+                  className="font-editorial text-lg sm:text-xl md:text-[21px] leading-[1.65] text-[#433429]"
                 >
                   {paragraph}
                 </p>
@@ -111,46 +108,6 @@ export function AboutSection() {
               </footer>
               <BotanicalSprig className="hidden sm:block absolute right-4 bottom-2 w-12 h-16 text-[#687156]/35" />
             </blockquote>
-
-            {/* Drawing Techniques & Materials */}
-            <div className="pt-4 border-t border-[#1D1A17]/12">
-              <div className="flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-[#B46248] mb-4">
-                <Palette className="w-4 h-4" />
-                <span>Drawing Techniques, Mediums & Surfaces</span>
-              </div>
-              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
-                {aboutArtistData.techniquesAndMaterials.map((tech, idx) => (
-                  <li
-                    key={idx}
-                    className="bg-[#F6F1E8]/80 border border-[#1D1A17]/10 p-4 text-xs leading-relaxed text-[#433429]"
-                  >
-                    {tech}
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Three Pillars of Practice */}
-            <div className="pt-6 border-t border-[#1D1A17]/12">
-              <span className="text-xs uppercase tracking-[0.2em] text-[#6E655C] block mb-5">
-                Three Disciplines in Conversation
-              </span>
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-                {aboutArtistData.pillars.map((pillar, i) => (
-                  <div key={pillar.title} className="space-y-2">
-                    <span className="font-editorial italic text-sm text-[#B46248]">
-                      0{i + 1}.
-                    </span>
-                    <h3 className="font-editorial text-xl text-[#1D1A17]">
-                      {pillar.title}
-                    </h3>
-                    <p className="text-xs leading-relaxed text-[#6E655C]">
-                      {pillar.body}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </div>
           </div>
         </div>
       </div>

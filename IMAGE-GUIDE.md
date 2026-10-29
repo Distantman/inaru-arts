@@ -45,10 +45,10 @@ All artwork and photography on this website are stored locally in **`public/imag
 
 | Filename | Purpose / Placement | Recommended Orientation | Suggested Dimensions (px) | Aspect Ratio |
 | :--- | :--- | :--- | :--- | :--- |
-| `cafe-mural-01.jpg` | **Project I Primary:** Wide contextual shot of a full mural inside a café or restaurant | Wide Landscape | `1920 × 1080` | `16:9` |
+| `cafe-mural-01.jpg` | **Project I Primary:** Contextual shot of a mural inside a café or restaurant | Portrait (Editorial) | `1080 × 1450` | `~3:4 / 4:5` |
 | `cafe-mural-03.jpg` | **Project I Detail:** Close-up texture photograph showing brushwork on plaster/wall | Portrait (Editorial) | `1200 × 1500` | `4:5` |
 | `cafe-mural-02.jpg` | **Project II Primary:** Contextual interior photograph of a corner booth, archway, or studio wall mural | Classic Landscape | `1600 × 1200` | `4:3` |
-| `cafe-mural-04.jpg` | **Project II Detail:** Panoramic elevation or horizontal frieze detail | Landscape (Editorial) | `1600 × 1000` | `16:10` |
+| `cafe-mural-04.jpg` | **Project II Detail:** Frieze elevation or line art detail | Portrait | `1200 × 1600` | `3:4` |
 
 ---
 

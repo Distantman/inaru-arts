@@ -246,28 +246,15 @@ export function ServicesAndContactSection() {
                   Elsewhere & Sketchbook Dispatches
                 </span>
                 <div className="flex flex-wrap items-center gap-6">
-                  {[
-                    {
-                      label: `Instagram (${artistProfile.instagramHandle})`,
-                      href: artistProfile.instagramUrl,
-                    },
-                    { label: "Pinterest Boards", href: artistProfile.pinterestUrl },
-                    {
-                      label: "Sketchbook Journal",
-                      href: artistProfile.substackUrl,
-                    },
-                  ].map((soc) => (
-                    <a
-                      key={soc.label}
-                      href={soc.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1.5 text-xs uppercase tracking-[0.16em] text-[#1D1A17] hover:text-[#B46248] underline underline-offset-4"
-                    >
-                      <span>{soc.label}</span>
-                      <ArrowUpRight className="w-3.5 h-3.5" />
-                    </a>
-                  ))}
+                  <a
+                    href={artistProfile.instagramUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-xs uppercase tracking-[0.16em] text-[#1D1A17] hover:text-[#B46248] underline underline-offset-4"
+                  >
+                    <span>Instagram ({artistProfile.instagramHandle})</span>
+                    <ArrowUpRight className="w-3.5 h-3.5" />
+                  </a>
                 </div>
               </div>
             </div>
@@ -424,13 +411,8 @@ export function ServicesAndContactSection() {
                   </a>
                 </li>
                 <li>
-                  <a href="#fashion" className="hover:text-[#F6F1E8]">
-                    05. Fashion & Figure
-                  </a>
-                </li>
-                <li>
                   <a href="#about" className="hover:text-[#F6F1E8]">
-                    06. Biography
+                    05. Biography
                   </a>
                 </li>
               </ul>

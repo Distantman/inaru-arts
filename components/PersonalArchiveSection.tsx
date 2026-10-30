@@ -21,7 +21,6 @@ const filterTabs: { id: DisciplineCategory; label: string }[] = [
   { id: "murals", label: "Painted Spaces" },
   { id: "modeling", label: "Runway & Model Studies" },
   { id: "wedding", label: "Live Weddings" },
-  { id: "fashion", label: "Fashion & Figure" },
 ];
 
 export function PersonalArchiveSection({

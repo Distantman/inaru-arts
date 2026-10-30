@@ -56,7 +56,7 @@ export function PortfolioClient() {
                 Selected Works & Exhibition Chapters
               </span>
               <p className="font-editorial text-2xl sm:text-3xl text-[#1D1A17]">
-                Five disciplines united by direct observation and the drawn line.
+                Four disciplines united by direct observation and the drawn line.
               </p>
             </div>
             <HandDrawnDivider className="py-0 hidden lg:flex" />
@@ -79,8 +79,10 @@ export function PortfolioClient() {
         {/* Chapter 04: Live Wedding Illustration */}
         <WeddingSection onSelectArtwork={setSelectedArtwork} />
 
-        {/* Chapter 05: Fashion & Figure Drawing */}
-        <FashionSection onSelectArtwork={setSelectedArtwork} />
+        {/* Chapter 05: Fashion & Figure Drawing (Hidden) */}
+        <div style={{ display: "none" }} aria-hidden="true">
+          <FashionSection onSelectArtwork={setSelectedArtwork} />
+        </div>
 
         {/* Biography & Studio Philosophy */}
         <AboutSection />

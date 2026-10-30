@@ -154,16 +154,15 @@ export function HeroSection({ onSelectArtwork }: HeroSectionProps) {
               <div className="flex items-center justify-between mb-3 text-[11px] uppercase tracking-[0.18em] text-[#6E655C]">
                 <span>Curated Disciplines</span>
                 <span className="font-editorial italic normal-case text-xs text-[#B46248]">
-                  Chapters I–V
+                  Chapters I–IV
                 </span>
               </div>
-              <div className="grid grid-cols-2 sm:grid-cols-5 gap-2.5 sm:gap-3 text-xs">
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-3 text-xs">
                 {[
                   { num: "I", name: "Murals", href: "#murals" },
                   { num: "II", name: "Archive", href: "#archive" },
                   { num: "III", name: "Runway", href: "#modeling" },
                   { num: "IV", name: "Weddings", href: "#weddings" },
-                  { num: "V", name: "Fashion & Figure", href: "#fashion" },
                 ].map((ch) => (
                   <a
                     key={ch.num}

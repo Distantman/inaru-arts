@@ -17,7 +17,6 @@ const disciplineQuickLinks = [
   { number: "02", label: "Personal Archive", href: "#archive" },
   { number: "03", label: "Runway & Live Model Studies", href: "#modeling" },
   { number: "04", label: "Live Wedding Illustration", href: "#weddings" },
-  { number: "05", label: "Fashion & Figure Drawing", href: "#fashion" },
 ];
 
 export function Navigation() {

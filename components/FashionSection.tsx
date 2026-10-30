@@ -32,7 +32,8 @@ export function FashionSection({ onSelectArtwork }: FashionSectionProps) {
     <section
       id="fashion"
       aria-labelledby="fashion-section-heading"
-      className="relative py-24 md:py-32 border-b border-[#1D1A17]/15 bg-[#F6F1E8]"
+      style={{ display: "none" }}
+      className="hidden relative py-24 md:py-32 border-b border-[#1D1A17]/15 bg-[#F6F1E8]"
     >
       <div className="mx-auto max-w-[1400px] px-5 sm:px-8 lg:px-12">
         {/* Editorial Art-Book Header */}
